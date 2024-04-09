@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*,*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4D04E;
+    font-family: "FigTree", Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-content {
+    padding: 24px;
+    background-color: hsl(0, 0%, 100%);
+    width: 384px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0 0 rgb(0,0,0);
+}
+
+.main-content:hover,
+.main-content:active,
+.main-content:focus
+{
+    box-shadow: 16px 16px 0 0 rgb(0,0,0);
+}
+
+h1:hover,
+h1:focus,
+h1:active {
+    color: #F4D04E;
+    cursor: url(assets/images/handcursor.svg) 15 15, move;
+}
+svg {
+    width: 337px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+
+.instructor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.category {
+    padding: 4px 12px;
+    background-color: #F4D04E;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border-radius: 4px;
+    align-self: flex-start;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;    
+}
+
+.description {
+    font-size: 1rem;
+    color: #7F7F7F;
+}
+
+.instructor span {
+    margin-left: 12px;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.instructor img {
+    width: 32px;
+}
+
+.attribution { font-size: 0.688rem; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 600px) {
+    .main-content {
+        width: 327px;
+    }
+
+    svg {
+        width: 279px;
+    }
+
+    .description {
+        font-size: 0.875rem;
+    }
+
+    .heading {
+        font-size: 1.25rem;
+    }
+
+    .category, .published-date {
+        font-size: 0.75rem;
+    }
+}
