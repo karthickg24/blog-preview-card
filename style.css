@@ -25,6 +25,7 @@ body {
     width: 384px;
     border-radius: 20px;
     box-shadow: 8px 8px 0 0 rgb(0,0,0);
+    border: 1px solid #111111;
 }
 
 .main-content:hover,
