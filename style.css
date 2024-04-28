@@ -7,6 +7,13 @@
     box-sizing: border-box;
 }
 
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+
 body {
     background-color: #F4D04E;
     font-family: "FigTree", Arial, sans-serif;
@@ -36,14 +43,22 @@ body {
     box-shadow: 16px 16px 0 0 rgb(0,0,0);
 }
 
-h1:hover,
-h1:focus,
-h1:active {
+.heading {
+    font-size: 1.5rem;
+}
+
+.heading a {
+    text-decoration: none;
+    color: #111111;
+}
+
+a:hover,
+a:focus {
     color: #F4D04E;
     cursor: url(assets/images/handcursor.svg) 15 15, move;
 }
-svg {
-    width: 337px;
+.banner-img {
+    /* width: 337px; */
     border-radius: 10px;
     margin-bottom: 24px;
 }
@@ -91,11 +106,12 @@ svg {
 @media only screen and (max-width: 600px) {
     .main-content {
         width: 327px;
+        margin-inline: 1.5rem;
     }
 
-    svg {
+    /* svg {
         width: 279px;
-    }
+    } */
 
     .description {
         font-size: 0.875rem;
