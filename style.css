@@ -17,6 +17,9 @@ svg {
 body {
     background-color: #F4D04E;
     font-family: "FigTree", Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
